@@ -10,18 +10,16 @@
 <img style="float:left;" src='Source/Assets/0.gif'/>
 <img style="float:left;" src='Source/Assets/1.gif'/>
 </div>
-
+<br>
 <div>
 <img style="float:left;" src='Source/Assets/2.gif'/>
 <img style="float:left;" src='Source/Assets/3.gif'/>
 </div>
-
+<br>
 <div>
 <img style="float:left;" src='Source/Assets/4.gif'/>
 <img style="float:left;" src='Source/Assets/5.gif'/>
 </div>
-
-
 <br>
 
 ## Installation
