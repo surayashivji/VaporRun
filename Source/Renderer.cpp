@@ -42,7 +42,7 @@ bool Renderer::Initialize(float width, float height)
 	// Force OpenGL to use hardware acceleration
 	SDL_GL_SetAttribute(SDL_GL_ACCELERATED_VISUAL, 1);
 
-	mWindow = SDL_CreateWindow("Can You Make It To the End?", 100, 100,
+	mWindow = SDL_CreateWindow("Vapor Run", 100, 100,
 		static_cast<int>(mScreenWidth),
 		static_cast<int>(mScreenHeight), SDL_WINDOW_OPENGL);
 	if (!mWindow)

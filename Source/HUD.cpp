@@ -14,7 +14,7 @@ HUD::HUD(Game* game)
 {
 	// Load font
 	mFont = new Font();
-	mFont->Load("Assets/CircularStd-Black.otf");
+	mFont->Load("Assets/CircularStd-BlackItalic.otf");
     mTimerText = mFont->RenderText("00:00.00");
     mCoinText = mFont->RenderText("0/55");
 }
@@ -79,7 +79,12 @@ void HUD::UdpateCheckpointText()
 void HUD::Draw(Shader* shader)
 {
 	DrawTexture(shader, mTimerText, Vector2(-420.0f, -325.0f));
-    DrawTexture(shader, mCoinText, Vector2(-420.0f, -275.0f));
+    
+    if (mGame->mNumCoins < 10) {
+        DrawTexture(shader, mCoinText, Vector2(-439.0f, -275.0f));
+    } else {
+        DrawTexture(shader, mCoinText, Vector2(-430.0f, -275.0f));
+    }
     
     if (mCheckpointTextTimer > 0) {
         DrawTexture(shader, mCheckpointText,  Vector2::Zero);
